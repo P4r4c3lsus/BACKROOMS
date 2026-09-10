@@ -6,6 +6,18 @@ public class PuzzlePuerta : MonoBehaviour
     public HingeJoint bisagra2;
     public HingeJoint bisagra3;
     public GameObject puerta;
+    
+    public float velocidadRotacion = 90f;
+    private Quaternion rotacionCerrada;
+    private Quaternion rotacionAbierta;
+
+    void Start()
+    {        
+        rotacionCerrada = puerta.transform.rotation;
+
+
+        rotacionAbierta = rotacionCerrada * Quaternion.Euler(0f, 90f, 0f);
+    }
 
     void Update()
     {
@@ -14,12 +26,12 @@ public class PuzzlePuerta : MonoBehaviour
         bool p2Arriba = bisagra2.angle < -30f;
 
         if (p1Abajo && p2Arriba && p3Abajo)
-        {
-            puerta.SetActive(false);
+        {            
+            puerta.transform.rotation = Quaternion.RotateTowards(puerta.transform.rotation, rotacionAbierta, velocidadRotacion * Time.deltaTime);
         }
         else
-        {
-            puerta.SetActive(true);
+        {            
+            puerta.transform.rotation = Quaternion.RotateTowards(puerta.transform.rotation, rotacionCerrada, velocidadRotacion * Time.deltaTime);
         }
     }
 }
