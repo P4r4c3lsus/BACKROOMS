@@ -22,9 +22,7 @@ public class DoorController : MonoBehaviour
         }
 
         closedRotation = doorPivot.localRotation;
-
         openRotation = closedRotation * Quaternion.Euler(0f, openAngle, 0f);
-
         isOpen = false;
     }
 
@@ -41,7 +39,6 @@ public class DoorController : MonoBehaviour
         }
 
         isOpen = true;
-
         StartCoroutine(OpenDoorRoutine());
     }
 
@@ -52,12 +49,9 @@ public class DoorController : MonoBehaviour
         while (elapsedTime < openDuration)
         {
             elapsedTime += Time.deltaTime;
-
             float progress = elapsedTime / openDuration;
             progress = Mathf.Clamp01(progress);
-
             doorPivot.localRotation = Quaternion.Slerp(closedRotation, openRotation, progress);
-
             yield return null;
         }
 

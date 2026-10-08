@@ -18,7 +18,6 @@ public class KeypadController : MonoBehaviour
     {
         currentCode = "";
         isUnlocked = false;
-
         UpdateDisplay();
     }
 
@@ -40,7 +39,6 @@ public class KeypadController : MonoBehaviour
         }
 
         currentCode += digit.ToString();
-
         UpdateDisplay();
     }
 
@@ -89,7 +87,6 @@ public class KeypadController : MonoBehaviour
     private void ResetCode()
     {
         currentCode = "";
-
         UpdateDisplay();
     }
 
