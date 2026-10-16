@@ -498,6 +498,7 @@ MonoBehaviour:
   - {fileID: -5424380351010359640}
   - {fileID: -2206411177640980632}
   - {fileID: -2605539862369529750}
+<<<<<<< Updated upstream
 <<<<<<< HEAD
   - {fileID: 3202728900515609644}
   - {fileID: -1873218851739172931}
@@ -510,6 +511,10 @@ MonoBehaviour:
   - {fileID: -1873218851739172931}
 >>>>>>> Stashed changes
 >>>>>>> origin/main
+=======
+  - {fileID: 8272828529757850564}
+  - {fileID: 6861219771146181381}
+>>>>>>> Stashed changes
   - {fileID: -1707941965575762608}
   - {fileID: 397916630072474656}
   - {fileID: 930943798984461072}
@@ -1887,6 +1892,7 @@ MonoBehaviour:
   m_Name: Standalone
   m_EditorClassIdentifier: Unity.XR.OpenXR::UnityEngine.XR.OpenXR.OpenXRSettings
   features:
+<<<<<<< Updated upstream
 <<<<<<< HEAD
   - {fileID: 285439680672248294}
   - {fileID: -7648436601868464592}
@@ -1898,6 +1904,12 @@ MonoBehaviour:
   - {fileID: -7185023568587538910}
   - {fileID: -4030720195621999054}
   - {fileID: -6921282643811028155}
+=======
+  - {fileID: 5909644705269451670}
+  - {fileID: -7185023568587538910}
+  - {fileID: -4030720195621999054}
+  - {fileID: -6921282643811028155}
+>>>>>>> Stashed changes
   - {fileID: 6334393630459507121}
   - {fileID: 8238520853833852390}
   - {fileID: -6081035387587312003}
@@ -1943,6 +1955,7 @@ MonoBehaviour:
   - {fileID: 4202917252657304968}
   - {fileID: 880809898771596253}
   - {fileID: 1671191208366132719}
+<<<<<<< Updated upstream
 =======
   - {fileID: 285439680672248294}
   - {fileID: -7648436601868464592}
@@ -1998,6 +2011,8 @@ MonoBehaviour:
 =======
 >>>>>>> Stashed changes
 >>>>>>> origin/main
+=======
+>>>>>>> Stashed changes
   customLoaderName: 
   m_renderMode: 1
   m_latencyOptimization: 0

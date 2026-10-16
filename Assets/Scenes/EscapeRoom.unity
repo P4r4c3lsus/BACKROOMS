@@ -348,6 +348,62 @@ MonoBehaviour:
   m_StartingInteractionStrengthFilters: []
   m_AutoFindParentInteractableInHierarchy: 0
   m_ParentInteractableObject: {fileID: 0}
+--- !u!1 &44594628
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 44594629}
+  - component: {fileID: 44594630}
+  m_Layer: 0
+  m_Name: CerebroPuzzle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &44594629
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 44594628}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1733013548}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &44594630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 44594628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67c14c9312f7b5449b956928845a9d1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SimondiceBrain
+  botonVerde: {fileID: 54272725}
+  botonRojo: {fileID: 1637199546}
+  botonAmarillo: {fileID: 1612728840}
+  botonAzul: {fileID: 969672491}
+  verdeApagado: {fileID: 2100000, guid: 8cbc39b9028a2204dbafe3cf0dab07bf, type: 2}
+  rojoApagado: {fileID: 2100000, guid: 486ddb4d6abe5ca4dad06e54f7ff62e9, type: 2}
+  amarilloApagado: {fileID: 2100000, guid: 8325250ec331b6c4fb680c88f265368d, type: 2}
+  azulApagado: {fileID: 2100000, guid: 53fbe60a2db97de4eb761208e5ad56b9, type: 2}
+  verdeEncendido: {fileID: 2100000, guid: 3005cbf77c6b7a84e93fa70daf94d068, type: 2}
+  rojoEncendido: {fileID: 2100000, guid: a7e75327b62b38d49b3b121fd3a1301e, type: 2}
+  amarilloEncendido: {fileID: 2100000, guid: a252983480275d84697e6c399265996c, type: 2}
+  azulEncendido: {fileID: 2100000, guid: 1bd1d6766365e824c9f123bf5232ef85, type: 2}
 --- !u!1 &54272722
 GameObject:
   m_ObjectHideFlags: 0
@@ -361,7 +417,7 @@ GameObject:
   - component: {fileID: 54272725}
   - component: {fileID: 54272724}
   m_Layer: 0
-  m_Name: BotonVerde
+  m_Name: BotonVerde0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10531,7 +10587,7 @@ GameObject:
   - component: {fileID: 969672491}
   - component: {fileID: 969672490}
   m_Layer: 0
-  m_Name: BotonAzul
+  m_Name: BotonAzul3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14620,15 +14676,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8806329115733545878, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.169
+      value: -10.658
       objectReference: {fileID: 0}
     - target: {fileID: 8806329115733545878, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.005
+      value: 0.803
       objectReference: {fileID: 0}
     - target: {fileID: 8806329115733545878, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.8410001
+      value: -8.332
       objectReference: {fileID: 0}
     - target: {fileID: 8806329115733545878, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
       propertyPath: m_LocalRotation.w
@@ -16424,7 +16480,7 @@ GameObject:
   - component: {fileID: 1612728840}
   - component: {fileID: 1612728839}
   m_Layer: 0
-  m_Name: BotonAmarilo
+  m_Name: BotonAmarilo2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16614,7 +16670,7 @@ GameObject:
   - component: {fileID: 1637199546}
   - component: {fileID: 1637199545}
   m_Layer: 0
-  m_Name: BotonRojo
+  m_Name: BotonRojo1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16683,7 +16739,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a7e75327b62b38d49b3b121fd3a1301e, type: 2}
+  - {fileID: 2100000, guid: 486ddb4d6abe5ca4dad06e54f7ff62e9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -17289,6 +17345,7 @@ Transform:
   - {fileID: 969672489}
   - {fileID: 1612728838}
   - {fileID: 1637199544}
+  - {fileID: 44594629}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1754699343
@@ -20516,7 +20573,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: S
+  m_text: E
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -23691,7 +23748,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1641717839318262691, guid: c2be53f3324162146bf775d8230b3fa2, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3212961564714734401, guid: c2be53f3324162146bf775d8230b3fa2, type: 3}
       propertyPath: m_LocalPosition.x
