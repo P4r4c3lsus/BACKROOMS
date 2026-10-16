@@ -498,8 +498,18 @@ MonoBehaviour:
   - {fileID: -5424380351010359640}
   - {fileID: -2206411177640980632}
   - {fileID: -2605539862369529750}
+<<<<<<< HEAD
   - {fileID: 3202728900515609644}
   - {fileID: -1873218851739172931}
+=======
+<<<<<<< Updated upstream
+  - {fileID: 8272828529757850564}
+  - {fileID: 6861219771146181381}
+=======
+  - {fileID: 3202728900515609644}
+  - {fileID: -1873218851739172931}
+>>>>>>> Stashed changes
+>>>>>>> origin/main
   - {fileID: -1707941965575762608}
   - {fileID: 397916630072474656}
   - {fileID: 930943798984461072}
@@ -912,6 +922,28 @@ MonoBehaviour:
   required: 0
   customRuntimeLoaderName: 
   m_UseRightHandedNDC: 0
+--- !u!114 &-4579888615376492210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f928d0d73a35f294fbe357ca17aa3547, type: 3}
+  m_Name: MicrosoftHandInteraction Metro
+  m_EditorClassIdentifier: Unity.XR.OpenXR::UnityEngine.XR.OpenXR.Features.Interactions.MicrosoftHandInteraction
+  m_enabled: 0
+  nameUi: Microsoft Hand Interaction Profile
+  version: 0.0.1
+  featureIdInternal: com.unity.openxr.feature.input.handtracking
+  openxrExtensionStrings: XR_MSFT_hand_interaction
+  company: Unity
+  priority: 0
+  targetOpenXRApiVersion: 
+  required: 0
+  customRuntimeLoaderName: 
 --- !u!114 &-4382417143182625730
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1855,10 +1887,68 @@ MonoBehaviour:
   m_Name: Standalone
   m_EditorClassIdentifier: Unity.XR.OpenXR::UnityEngine.XR.OpenXR.OpenXRSettings
   features:
+<<<<<<< HEAD
   - {fileID: 285439680672248294}
   - {fileID: -7648436601868464592}
   - {fileID: -4030720195621999054}
   - {fileID: -6921282643811028155}
+=======
+<<<<<<< Updated upstream
+  - {fileID: 5909644705269451670}
+  - {fileID: -7185023568587538910}
+  - {fileID: -4030720195621999054}
+  - {fileID: -6921282643811028155}
+  - {fileID: 6334393630459507121}
+  - {fileID: 8238520853833852390}
+  - {fileID: -6081035387587312003}
+  - {fileID: -1503239243672096960}
+  - {fileID: 885939136801821241}
+  - {fileID: 6199784724932471251}
+  - {fileID: 6514652125610073516}
+  - {fileID: -338618895980912224}
+  - {fileID: 1858164028351107788}
+  - {fileID: -3747349409697269874}
+  - {fileID: 6155280047317644821}
+  - {fileID: 5045189387835861337}
+  - {fileID: 4884506850688867780}
+  - {fileID: 4060331029113192528}
+  - {fileID: 7753196464333780531}
+  - {fileID: 5730805891814507237}
+  - {fileID: 3252422614933382241}
+  - {fileID: 8205461379872309004}
+  - {fileID: 8647734623008290639}
+  - {fileID: -267754697678728931}
+  - {fileID: 8689460318393526434}
+  - {fileID: 8739339742159080891}
+  - {fileID: 3224320471181938610}
+  - {fileID: -831481135460871771}
+  - {fileID: 8315390370578804940}
+  - {fileID: 4920884983835379283}
+  - {fileID: 559539507781572361}
+  - {fileID: 27484894555503449}
+  - {fileID: 3654950093934700356}
+  - {fileID: 4449104797461379043}
+  - {fileID: 8817953297723058443}
+  - {fileID: 4313771309008172510}
+  - {fileID: 3256126507111527410}
+  - {fileID: 7053323009086880837}
+  - {fileID: 3493911797212012510}
+  - {fileID: 1563016339650828094}
+  - {fileID: 4636080766590598193}
+  - {fileID: 459483118405251620}
+  - {fileID: 8188653454035447451}
+  - {fileID: 3925722821320519520}
+  - {fileID: 26351561211040516}
+  - {fileID: 3708665182193214224}
+  - {fileID: 4202917252657304968}
+  - {fileID: 880809898771596253}
+  - {fileID: 1671191208366132719}
+=======
+  - {fileID: 285439680672248294}
+  - {fileID: -7648436601868464592}
+  - {fileID: -4030720195621999054}
+  - {fileID: -6921282643811028155}
+>>>>>>> origin/main
   - {fileID: 369462382566342305}
   - {fileID: -8994640669208364062}
   - {fileID: -7652178977879047352}
@@ -1904,6 +1994,10 @@ MonoBehaviour:
   - {fileID: 82082085108857546}
   - {fileID: -3449563447808185836}
   - {fileID: 1231424387407615290}
+<<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
+>>>>>>> origin/main
   customLoaderName: 
   m_renderMode: 1
   m_latencyOptimization: 0
@@ -2046,7 +2140,11 @@ MonoBehaviour:
   Values:
   - {fileID: -414665946623287566}
   - {fileID: -6748123214921959636}
+<<<<<<< Updated upstream
   - {fileID: -7406060456466132919}
+=======
+  - {fileID: 5486398340367669187}
+>>>>>>> Stashed changes
 --- !u!114 &26351561211040516
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2283,6 +2381,29 @@ MonoBehaviour:
   targetOpenXRApiVersion: 
   required: 0
   customRuntimeLoaderName: 
+--- !u!114 &486015852770113452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e314dfef9af0904e80129bcc0a79361, type: 3}
+  m_Name: HandTracking Metro
+  m_EditorClassIdentifier: Unity.XR.Hands::UnityEngine.XR.Hands.OpenXR.HandTracking
+  m_enabled: 0
+  nameUi: Hand Tracking Subsystem
+  version: 0.0.1
+  featureIdInternal: com.unity.openxr.feature.input.handtrackingsubsystem
+  openxrExtensionStrings: XR_EXT_hand_tracking
+  company: Unity
+  priority: -100
+  targetOpenXRApiVersion: 
+  required: 0
+  customRuntimeLoaderName: 
+  m_AutoStartSubsystem: 1
 --- !u!114 &527146716551971816
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3711,6 +3832,37 @@ MonoBehaviour:
   required: 0
   customRuntimeLoaderName: 
   enableSubsampledLayout: 0
+--- !u!114 &5486398340367669187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5a1f07dc5afe854f9f12a4194aca3fb, type: 3}
+  m_Name: Metro
+  m_EditorClassIdentifier: Unity.XR.OpenXR::UnityEngine.XR.OpenXR.OpenXRSettings
+  features:
+  - {fileID: -4579888615376492210}
+  - {fileID: 6466836911786238193}
+  - {fileID: 486015852770113452}
+  customLoaderName: 
+  m_renderMode: 1
+  m_latencyOptimization: 0
+  m_autoColorSubmissionMode: 1
+  m_colorSubmissionModes:
+    m_List: 00000000
+  m_depthSubmissionMode: 0
+  m_spacewarpMotionVectorTextureFormat: 0
+  m_optimizeBufferDiscards: 0
+  m_symmetricProjection: 0
+  m_optimizeMultiviewRenderRegions: 0
+  m_multiviewRenderRegionsOptimizationMode: 0
+  m_hasMigratedMultiviewRenderRegionSetting: 1
+  m_foveatedRenderingApi: 1
+  m_useOpenXRPredictedTime: 1
 --- !u!114 &5730805891814507237
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3933,6 +4085,28 @@ MonoBehaviour:
   featureIdInternal: com.unity.openxr.feature.arfoundation-androidxr-anchor
   openxrExtensionStrings: XR_ANDROID_trackables
   company: Unity Technologies
+  priority: 0
+  targetOpenXRApiVersion: 
+  required: 0
+  customRuntimeLoaderName: 
+--- !u!114 &6466836911786238193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b213d3e3c7f3109449eb46a4c8ee42f0, type: 3}
+  m_Name: XrPerformanceSettingsFeature Metro
+  m_EditorClassIdentifier: Unity.XR.OpenXR::UnityEngine.XR.OpenXR.Features.Extensions.PerformanceSettings.XrPerformanceSettingsFeature
+  m_enabled: 0
+  nameUi: XR Performance Settings
+  version: 1.0.0
+  featureIdInternal: com.unity.openxr.feature.extension.performance_settings
+  openxrExtensionStrings: XR_EXT_performance_settings
+  company: Unity
   priority: 0
   targetOpenXRApiVersion: 
   required: 0
