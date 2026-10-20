@@ -35,6 +35,16 @@ public class StatueController : MonoBehaviour
         {
             return;
         }
+
+        statue1.Rotate(0f, 90f, 0f);
+        currentPosition1++;
+
+        if (currentPosition1 > 3)
+        {
+            currentPosition1 = 0;
+        }
+
+        CheckPuzzle();
     }
 
     public void RotateStatue2()
@@ -43,6 +53,16 @@ public class StatueController : MonoBehaviour
         {
             return;
         }
+
+        statue2.Rotate(0f, 90f, 0f);
+        currentPosition2++;
+
+        if (currentPosition2 > 3)
+        {
+            currentPosition2 = 0;
+        }
+
+        CheckPuzzle();
     }
 
     public void RotateStatue3()
@@ -51,5 +71,34 @@ public class StatueController : MonoBehaviour
         {
             return;
         }
+
+        statue3.Rotate(0f, 90f, 0f);
+        currentPosition3++;
+
+        if (currentPosition3 > 3)
+        {
+            currentPosition3 = 0;
+        }
+
+        CheckPuzzle();
+    }
+
+    private void CheckPuzzle()
+    {
+        if (currentPosition1 == correctPosition1 && currentPosition2 == correctPosition2 && currentPosition3 == correctPosition3)
+        {
+            CompletePuzzle();
+        }
+    }
+
+    private void CompletePuzzle()
+    {
+        puzzleCompleted = true;
+
+        if (clueObject != null)
+        {
+            clueObject.SetActive(true);
+        }
     }
 }
+
