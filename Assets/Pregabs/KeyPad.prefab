@@ -576,7 +576,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb114d10c920f304888a54813d4ec419, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KeypadController
-  correctCode: 1034
+  correctCode: 4265
   maxDigits: 4
   displayText: {fileID: 7201539587602086502}
   doorController: {fileID: 0}
