@@ -4,7 +4,7 @@ using UnityEngine;
 public class KeypadController : MonoBehaviour
 {
     [Header("Code")]
-    [SerializeField] private string correctCode = "1034";
+    [SerializeField] private string correctCode = "4265";
     [SerializeField] private int maxDigits = 4;
 
     [Header("References")]
