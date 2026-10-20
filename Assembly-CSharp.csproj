@@ -79,6 +79,7 @@
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\VRTemplateAssets\Scripts\Callout.cs" />
     <Compile Include="Assets\VRTemplateAssets\Scripts\CalloutGazeController.cs" />
+    <Compile Include="Assets\Scripts\BotonSimon.cs" />
     <Compile Include="Assets\Scripts\PuzzlePuerta.cs" />
     <Compile Include="Assets\VRTemplateAssets\Scripts\StepManager.cs" />
     <Compile Include="Assets\Scripts\StatueController.cs" />
@@ -675,14 +676,6 @@
       <HintPath>Library\PackageCache\com.unity.collections@9796e5ee0d9e\Unity.Collections.Tests\System.Runtime.CompilerServices.Unsafe\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.Android.Types">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.3.19f1\Editor\Data\PlaybackEngines\AndroidPlayer\Unity.Android.Types.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.Android.Gradle">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.3.19f1\Editor\Data\PlaybackEngines\AndroidPlayer\Unity.Android.Gradle.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="netstandard">
       <HintPath>C:\Program Files\Unity\Hub\Editor\6000.3.19f1\Editor\Data\NetStandard\ref\2.1.0\netstandard.dll</HintPath>
       <Private>False</Private>
@@ -1173,6 +1166,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+<<<<<<< Updated upstream
     <ProjectReference Include="Unity.XR.ARAnalytics.Editor.csproj">
       <Project>{25D528BE-7A2F-2011-084C-7051E72463C3}</Project>
       <Name>Unity.XR.ARAnalytics.Editor</Name>
@@ -1225,10 +1219,13 @@
       <Project>{306909CA-5798-02B1-AFCD-5030B94700DE}</Project>
       <Name>Unity.EditorCoroutines.Editor</Name>
     </ProjectReference>
+=======
+>>>>>>> Stashed changes
     <ProjectReference Include="Unity.XR.Interaction.Toolkit.Samples.DeviceSimulator.csproj">
       <Project>{38430E17-649C-4E90-D352-7D5AA1A8D213}</Project>
       <Name>Unity.XR.Interaction.Toolkit.Samples.DeviceSimulator</Name>
     </ProjectReference>
+<<<<<<< Updated upstream
     <ProjectReference Include="Unity.RenderPipelines.Core.Runtime.Shared.csproj">
       <Project>{E48C09DF-A77A-16D6-E3B7-C769E60AEB97}</Project>
       <Name>Unity.RenderPipelines.Core.Runtime.Shared</Name>
@@ -1237,10 +1234,13 @@
       <Project>{A0439BDA-0D63-C1DC-7B6D-685BBDC294A0}</Project>
       <Name>Unity.RenderPipelines.Universal.2D.Runtime</Name>
     </ProjectReference>
+=======
+>>>>>>> Stashed changes
     <ProjectReference Include="Unity.XR.Interaction.Toolkit.Samples.StarterAssets.csproj">
       <Project>{E43DC31B-03AC-EB47-E78A-8C108D9BEBE2}</Project>
       <Name>Unity.XR.Interaction.Toolkit.Samples.StarterAssets</Name>
     </ProjectReference>
+<<<<<<< Updated upstream
     <ProjectReference Include="Unity.XR.ARFoundation.VisualScripting.csproj">
       <Project>{F64E4412-2E21-3364-9180-994A96564B46}</Project>
       <Name>Unity.XR.ARFoundation.VisualScripting</Name>
@@ -1301,10 +1301,13 @@
       <Project>{BE8DBDEF-E65A-C5A8-97B8-D49D5AF8BB90}</Project>
       <Name>Unity.TextMeshPro.Editor</Name>
     </ProjectReference>
+=======
+>>>>>>> Stashed changes
     <ProjectReference Include="Unity.XR.Interaction.Toolkit.Samples.InteractionSimulator.csproj">
       <Project>{149343F7-2CE8-003E-3D28-FDBCCAA6718D}</Project>
       <Name>Unity.XR.Interaction.Toolkit.Samples.InteractionSimulator</Name>
     </ProjectReference>
+<<<<<<< Updated upstream
     <ProjectReference Include="UnityEngine.XR.LegacyInputHelpers.csproj">
       <Project>{CCC6C90D-AC64-12C6-AD1D-CB4FF86C8A2A}</Project>
       <Name>UnityEngine.XR.LegacyInputHelpers</Name>
@@ -1361,10 +1364,13 @@
       <Project>{02B40E5B-FA5F-6CEA-5288-57D9830C475F}</Project>
       <Name>Unity.XR.Simulation</Name>
     </ProjectReference>
+=======
+>>>>>>> Stashed changes
     <ProjectReference Include="Unity.XR.Interaction.Toolkit.Samples.InteractionSimulator.Editor.csproj">
       <Project>{21EF3FE4-571B-210F-372F-1859B5F904D2}</Project>
       <Name>Unity.XR.Interaction.Toolkit.Samples.InteractionSimulator.Editor</Name>
     </ProjectReference>
+<<<<<<< Updated upstream
     <ProjectReference Include="Unity.RenderPipelines.Core.Editor.Shared.csproj">
       <Project>{00ECCAD2-7447-F0C4-2C49-A71B37CB8268}</Project>
       <Name>Unity.RenderPipelines.Core.Editor.Shared</Name>
@@ -1381,10 +1387,13 @@
       <Project>{67F97876-8373-D1CC-05B5-7CBA8B6DC567}</Project>
       <Name>Unity.InputSystem</Name>
     </ProjectReference>
+=======
+>>>>>>> Stashed changes
     <ProjectReference Include="Unity.XR.Interaction.Toolkit.Samples.Hands.csproj">
       <Project>{8BABE3AB-B2B3-3476-B8C7-6374C14B4DC6}</Project>
       <Name>Unity.XR.Interaction.Toolkit.Samples.Hands</Name>
     </ProjectReference>
+<<<<<<< Updated upstream
     <ProjectReference Include="Unity.RenderPipelines.Core.Editor.csproj">
       <Project>{2B790604-32B2-4341-ED62-A5895F12BC3A}</Project>
       <Name>Unity.RenderPipelines.Core.Editor</Name>
@@ -1489,10 +1498,13 @@
       <Project>{DC66D818-AF6F-1186-8704-C0F33246E4A4}</Project>
       <Name>Unity.Mathematics</Name>
     </ProjectReference>
+=======
+>>>>>>> Stashed changes
     <ProjectReference Include="Unity.XR.Hands.Samples.VisualizerSample.csproj">
       <Project>{F8CE5D70-1612-F9D7-9687-52ED37AA9F8A}</Project>
       <Name>Unity.XR.Hands.Samples.VisualizerSample</Name>
     </ProjectReference>
+<<<<<<< Updated upstream
     <ProjectReference Include="Unity.Multiplayer.Center.Common.csproj">
       <Project>{350A2448-C33C-6100-82E9-56FA473D38BA}</Project>
       <Name>Unity.Multiplayer.Center.Common</Name>
@@ -1529,10 +1541,13 @@
       <Project>{185C8B2C-7CD0-DC57-7396-90991DFA322B}</Project>
       <Name>Unity.XR.MetaOpenXR.Editor</Name>
     </ProjectReference>
+=======
+>>>>>>> Stashed changes
     <ProjectReference Include="Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor.csproj">
       <Project>{A0645940-49FD-1781-DAB7-428DA9345CAB}</Project>
       <Name>Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor</Name>
     </ProjectReference>
+<<<<<<< Updated upstream
     <ProjectReference Include="Unity.RenderPipeline.Universal.ShaderLibrary.csproj">
       <Project>{DF084837-665C-2C8A-1846-1DCA6690FA0C}</Project>
       <Name>Unity.RenderPipeline.Universal.ShaderLibrary</Name>
@@ -1545,10 +1560,13 @@
       <Project>{DA633717-E75D-B945-04BB-BF098D16FE81}</Project>
       <Name>Unity.ShaderGraph.Editor</Name>
     </ProjectReference>
+=======
+>>>>>>> Stashed changes
     <ProjectReference Include="Unity.XR.Interaction.Toolkit.Samples.Hands.Editor.csproj">
       <Project>{9A4E397A-CB24-5C53-1949-0AE644EAF14D}</Project>
       <Name>Unity.XR.Interaction.Toolkit.Samples.Hands.Editor</Name>
     </ProjectReference>
+<<<<<<< Updated upstream
     <ProjectReference Include="Unity.Performance.Profile-Analyzer.Editor.csproj">
       <Project>{6851CD21-CD6F-72E9-A1ED-2EE5F5E0B7A1}</Project>
       <Name>Unity.Performance.Profile-Analyzer.Editor</Name>
@@ -1569,6 +1587,8 @@
       <Project>{C5E57F97-74A7-007D-CAD6-7EB0887CE907}</Project>
       <Name>UnityEditor.UI</Name>
     </ProjectReference>
+=======
+>>>>>>> Stashed changes
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

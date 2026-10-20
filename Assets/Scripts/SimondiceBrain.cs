@@ -1,5 +1,6 @@
-using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
 public class SimondiceBrain : MonoBehaviour
 {
@@ -15,47 +16,134 @@ public class SimondiceBrain : MonoBehaviour
     public Material amarilloApagado;
     public Material azulApagado;
 
-    [Header("Pintura: Encendidos (Brillantes)")]
+    [Header("Pintura: Encendidos")]
     public Material verdeEncendido;
     public Material rojoEncendido;
     public Material amarilloEncendido;
     public Material azulEncendido;
 
-    public void IluminarBoton(int numeroColor)
+    [Header("Estado del Juego")]
+    public List<int> secuenciaSimon = new List<int>();
+    public int pasoActualJugador = 0;
+    public bool turnoDelJugador = false;
+
+    [Header("Configuración Escape Room")]
+    public int rondasParaGanar = 5;
+    private int rondasCompletadas = 0;
+    private bool juegoTerminado = false;
+
+    [ContextMenu("EMPEZAR NUEVO JUEGO")]
+    public void IniciarJuego()
     {
-        StartCoroutine(ParpadeoRutina(numeroColor));
+        if (juegoTerminado) return;
+
+        secuenciaSimon.Clear();
+        rondasCompletadas = 0;
+        IniciarNuevaRonda();
+    }
+
+    public void IniciarNuevaRonda()
+    {
+        turnoDelJugador = false;
+        pasoActualJugador = 0;
+
+        int nuevoColor = Random.Range(0, 4);
+        secuenciaSimon.Add(nuevoColor);
+
+        StartCoroutine(ReproducirSecuencia());
+    }
+
+    private IEnumerator ReproducirSecuencia()
+    {
+        yield return new WaitForSeconds(1f);
+
+        foreach (int colorActual in secuenciaSimon)
+        {
+            yield return StartCoroutine(ParpadeoRutina(colorActual));
+            yield return new WaitForSeconds(0.2f);
+        }
+
+        turnoDelJugador = true;
+    }
+
+    public void BotonTocadoporJugador(int colorPresionado)
+    {
+        if (!turnoDelJugador || juegoTerminado) return;
+
+        StartCoroutine(ParpadeoRutina(colorPresionado));
+
+        if (colorPresionado == secuenciaSimon[pasoActualJugador])
+        {
+            pasoActualJugador++;
+
+            if (pasoActualJugador >= secuenciaSimon.Count)
+            {
+                turnoDelJugador = false;
+                rondasCompletadas++;
+
+                if (rondasCompletadas >= rondasParaGanar)
+                {
+                    Debug.Log("¡GANASTE! Puzzle superado.");
+                    StartCoroutine(RutinaVictoria());
+                }
+                else
+                {
+                    Debug.Log("¡Ronda superada! Llevas " + rondasCompletadas + " de " + rondasParaGanar);
+                    Invoke("IniciarNuevaRonda", 1.5f);
+                }
+            }
+        }
+        else
+        {
+            turnoDelJugador = false;
+            Debug.Log("¡Error! Fin del juego.");
+            StartCoroutine(RutinaError());
+        }
     }
 
     private IEnumerator ParpadeoRutina(int numeroColor)
     {
-        // 1. ENCENDEMOS LA LUZ correspondiente
         if (numeroColor == 0) botonVerde.material = verdeEncendido;
         else if (numeroColor == 1) botonRojo.material = rojoEncendido;
         else if (numeroColor == 2) botonAmarillo.material = amarilloEncendido;
         else if (numeroColor == 3) botonAzul.material = azulEncendido;
 
-        // 2. ESPERAMOS medio segundo
         yield return new WaitForSeconds(0.5f);
 
-        // 3. APAGAMOS LA LUZ de regreso
         if (numeroColor == 0) botonVerde.material = verdeApagado;
         else if (numeroColor == 1) botonRojo.material = rojoApagado;
         else if (numeroColor == 2) botonAmarillo.material = amarilloApagado;
         else if (numeroColor == 3) botonAzul.material = azulApagado;
     }
 
-    // --- ZONA DE PRUEBAS DESDE EL INSPECTOR ---
+    private IEnumerator RutinaError()
+    {
+        botonVerde.material = rojoEncendido;
+        botonRojo.material = rojoEncendido;
+        botonAmarillo.material = rojoEncendido;
+        botonAzul.material = rojoEncendido;
 
-    [ContextMenu("Probar Luz Verde")]
-    public void ProbarVerde() { IluminarBoton(0); }
+        yield return new WaitForSeconds(1.5f);
 
-    [ContextMenu("Probar Luz Roja")]
-    public void ProbarRojo() { IluminarBoton(1); }
+        botonVerde.material = verdeApagado;
+        botonRojo.material = rojoApagado;
+        botonAmarillo.material = amarilloApagado;
+        botonAzul.material = azulApagado;
 
-    [ContextMenu("Probar Luz Amarilla")]
-    public void ProbarAmarillo() { IluminarBoton(2); }
+        secuenciaSimon.Clear();
+        rondasCompletadas = 0;
+    }
 
-    [ContextMenu("Probar Luz Azul")]
-    public void ProbarAzul() { IluminarBoton(3); }
+    private IEnumerator RutinaVictoria()
+    {
+        juegoTerminado = true;
+
+        botonVerde.material = verdeEncendido;
+        botonRojo.material = verdeEncendido;
+        botonAmarillo.material = verdeEncendido;
+        botonAzul.material = verdeEncendido;
+
+        yield return null; // Solo esperamos un frame y dejamos todo encendido
+    }
 }
 
