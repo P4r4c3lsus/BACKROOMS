@@ -10078,8 +10078,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 969672488}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
-<<<<<<< Updated upstream
-=======
 --- !u!114 &969672493
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10180,11 +10178,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BotonSimon
   miColor: 3
   cerebro: {fileID: 44594630}
---- !u!1 &972322513 stripped
+--- !u!1 &972322513
 GameObject:
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: -4552507616652304734, guid: 37abdfbbff32a594faa642b45a62efe7, type: 3}
-  m_PrefabInstance: {fileID: 2002522237}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 972322517}
+  - component: {fileID: 972322516}
+  - component: {fileID: 972322515}
+  m_Layer: 0
+  m_Name: 
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
 --- !u!114 &972322515
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10234,7 +10245,7 @@ MonoBehaviour:
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2002522239}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: KeypadController, Assembly-CSharp
         m_MethodName: ClearCode
         m_Mode: 1
@@ -10293,7 +10304,21 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.0010447993, y: 0.0054669757, z: 0.0054452554}
   m_Center: {x: -0.0072436957, y: 0.053964116, z: 0.032019015}
->>>>>>> Stashed changes
+--- !u!4 &972322517
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 972322513}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &976442729
 GameObject:
   m_ObjectHideFlags: 0
@@ -22800,6 +22825,7 @@ Transform:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 972322517}
   - {fileID: 1373153106}
   - {fileID: 817075156}
   - {fileID: 2046629159}
