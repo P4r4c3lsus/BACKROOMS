@@ -686,7 +686,7 @@ MonoBehaviour:
   m_text: Parte visual
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f339d6033a727d946898154ec69fb835, type: 2}
-  m_sharedMaterial: {fileID: 8067068210928773173, guid: f339d6033a727d946898154ec69fb835, type: 2}
+  m_sharedMaterial: {fileID: 4109255242004652255, guid: f339d6033a727d946898154ec69fb835, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1527,7 +1527,7 @@ MonoBehaviour:
   m_text: 'Desarrolladores '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f339d6033a727d946898154ec69fb835, type: 2}
-  m_sharedMaterial: {fileID: 8067068210928773173, guid: f339d6033a727d946898154ec69fb835, type: 2}
+  m_sharedMaterial: {fileID: 4109255242004652255, guid: f339d6033a727d946898154ec69fb835, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2071,7 +2071,7 @@ MonoBehaviour:
     Javier Alvarez'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f339d6033a727d946898154ec69fb835, type: 2}
-  m_sharedMaterial: {fileID: 8067068210928773173, guid: f339d6033a727d946898154ec69fb835, type: 2}
+  m_sharedMaterial: {fileID: 4109255242004652255, guid: f339d6033a727d946898154ec69fb835, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2586,7 +2586,7 @@ MonoBehaviour:
     Diego caceres'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f339d6033a727d946898154ec69fb835, type: 2}
-  m_sharedMaterial: {fileID: 8067068210928773173, guid: f339d6033a727d946898154ec69fb835, type: 2}
+  m_sharedMaterial: {fileID: 4109255242004652255, guid: f339d6033a727d946898154ec69fb835, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3863,7 +3863,7 @@ MonoBehaviour:
   m_text: 'Creditos '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f339d6033a727d946898154ec69fb835, type: 2}
-  m_sharedMaterial: {fileID: 8067068210928773173, guid: f339d6033a727d946898154ec69fb835, type: 2}
+  m_sharedMaterial: {fileID: 4109255242004652255, guid: f339d6033a727d946898154ec69fb835, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6915,7 +6915,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 114.99902, y: 344.21594}
+  m_AnchoredPosition: {x: 114.99902, y: 344.375}
   m_SizeDelta: {x: 909, y: 505}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!4 &4885817742440040368
@@ -7386,7 +7386,7 @@ Transform:
   m_GameObject: {fileID: 6563059194536939414}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 114.94521, y: 342.13, z: -14.45}
+  m_LocalPosition: {x: 114.94521, y: 342.277, z: -14.45}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7665,7 +7665,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5791483143459181868}
   m_Layer: 0
-  m_Name: Environment_Almikieieva FBX
+  m_Name: lobby_credits
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8429,7 +8429,7 @@ MonoBehaviour:
   m_text: Back
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f339d6033a727d946898154ec69fb835, type: 2}
-  m_sharedMaterial: {fileID: 8067068210928773173, guid: f339d6033a727d946898154ec69fb835, type: 2}
+  m_sharedMaterial: {fileID: 4109255242004652255, guid: f339d6033a727d946898154ec69fb835, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
