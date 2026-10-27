@@ -685,8 +685,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Parte visual
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: f339d6033a727d946898154ec69fb835, type: 2}
-  m_sharedMaterial: {fileID: 4109255242004652255, guid: f339d6033a727d946898154ec69fb835, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 862c6ef5f0dc9f049b9a78083aa836d3, type: 2}
+  m_sharedMaterial: {fileID: -7871306774678953932, guid: 862c6ef5f0dc9f049b9a78083aa836d3, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1526,8 +1526,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Desarrolladores '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: f339d6033a727d946898154ec69fb835, type: 2}
-  m_sharedMaterial: {fileID: 4109255242004652255, guid: f339d6033a727d946898154ec69fb835, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 862c6ef5f0dc9f049b9a78083aa836d3, type: 2}
+  m_sharedMaterial: {fileID: -7871306774678953932, guid: 862c6ef5f0dc9f049b9a78083aa836d3, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2070,8 +2070,8 @@ MonoBehaviour:
 
     Javier Alvarez'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: f339d6033a727d946898154ec69fb835, type: 2}
-  m_sharedMaterial: {fileID: 4109255242004652255, guid: f339d6033a727d946898154ec69fb835, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 862c6ef5f0dc9f049b9a78083aa836d3, type: 2}
+  m_sharedMaterial: {fileID: -7871306774678953932, guid: 862c6ef5f0dc9f049b9a78083aa836d3, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2585,8 +2585,8 @@ MonoBehaviour:
 
     Diego caceres'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: f339d6033a727d946898154ec69fb835, type: 2}
-  m_sharedMaterial: {fileID: 4109255242004652255, guid: f339d6033a727d946898154ec69fb835, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 862c6ef5f0dc9f049b9a78083aa836d3, type: 2}
+  m_sharedMaterial: {fileID: -7871306774678953932, guid: 862c6ef5f0dc9f049b9a78083aa836d3, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3862,8 +3862,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Creditos '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: f339d6033a727d946898154ec69fb835, type: 2}
-  m_sharedMaterial: {fileID: 4109255242004652255, guid: f339d6033a727d946898154ec69fb835, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 862c6ef5f0dc9f049b9a78083aa836d3, type: 2}
+  m_sharedMaterial: {fileID: -7871306774678953932, guid: 862c6ef5f0dc9f049b9a78083aa836d3, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -8428,8 +8428,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Back
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: f339d6033a727d946898154ec69fb835, type: 2}
-  m_sharedMaterial: {fileID: 4109255242004652255, guid: f339d6033a727d946898154ec69fb835, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 862c6ef5f0dc9f049b9a78083aa836d3, type: 2}
+  m_sharedMaterial: {fileID: -7871306774678953932, guid: 862c6ef5f0dc9f049b9a78083aa836d3, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

@@ -68,7 +68,7 @@ MonoBehaviour:
   m_text: Retry
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 862c6ef5f0dc9f049b9a78083aa836d3, type: 2}
-  m_sharedMaterial: {fileID: 4471891531462397177, guid: 862c6ef5f0dc9f049b9a78083aa836d3, type: 2}
+  m_sharedMaterial: {fileID: -7871306774678953932, guid: 862c6ef5f0dc9f049b9a78083aa836d3, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -525,7 +525,7 @@ MonoBehaviour:
   m_text: GAME OVER
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 862c6ef5f0dc9f049b9a78083aa836d3, type: 2}
-  m_sharedMaterial: {fileID: 4471891531462397177, guid: 862c6ef5f0dc9f049b9a78083aa836d3, type: 2}
+  m_sharedMaterial: {fileID: -7871306774678953932, guid: 862c6ef5f0dc9f049b9a78083aa836d3, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -816,7 +816,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &5503252682018934214
 MonoBehaviour:
   m_ObjectHideFlags: 0

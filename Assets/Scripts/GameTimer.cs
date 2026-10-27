@@ -84,6 +84,11 @@ public class GameTimer : MonoBehaviour
         gameOver = true;
         Time.timeScale = 0f;
 
+        if (AudioManager.Instance != null)
+        {
+            AudioManager.Instance.PlayMusic("GameOverMusic");
+        }
+
         foreach (Behaviour component in componentsToDisable)
         {
             if (component != null)

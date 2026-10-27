@@ -1726,9 +1726,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5a2a02a28b42de40aa3c32fecdc451d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AudioManager
-  sounds: []
+  sounds:
+  - name: MainMenuMusic
+    clip: {fileID: 8300000, guid: 01bc5d20c1f9e0c4e981eccf044eb7d1, type: 3}
+    volume: 0.5
+  - name: GamePlayMusic
+    clip: {fileID: 8300000, guid: 6022a19c45ad3474ca02cc3bdb97e6b8, type: 3}
+    volume: 0.3
+  - name: GameOverMusic
+    clip: {fileID: 8300000, guid: d837b5f1f6a1e2c4cae974c6d5efd284, type: 3}
+    volume: 0.5
+  - name: CreditsMusic
+    clip: {fileID: 8300000, guid: 29b393b96c7a20745b6bf6ce8524fd48, type: 3}
+    volume: 0.5
+  sceneMusic:
+  - sceneName: UIMainMenu
+    musicName: MainMenuMusic
+  - sceneName: UICredits
+    musicName: CreditsMusic
+  - sceneName: Gameplay
+    musicName: GamePlayMusic
   musicSource: {fileID: 195560982}
   sfxSource: {fileID: 195560981}
+  fadeDuration: 1.5
 --- !u!4 &195560984
 Transform:
   m_ObjectHideFlags: 0
@@ -4351,8 +4371,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Escape the Rooms
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 862c6ef5f0dc9f049b9a78083aa836d3, type: 2}
-  m_sharedMaterial: {fileID: 4471891531462397177, guid: 862c6ef5f0dc9f049b9a78083aa836d3, type: 2}
+  m_fontAsset: {fileID: 0}
+  m_sharedMaterial: {fileID: 0}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4746,8 +4766,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Credits '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 862c6ef5f0dc9f049b9a78083aa836d3, type: 2}
-  m_sharedMaterial: {fileID: 4471891531462397177, guid: 862c6ef5f0dc9f049b9a78083aa836d3, type: 2}
+  m_fontAsset: {fileID: 0}
+  m_sharedMaterial: {fileID: 0}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -8050,8 +8070,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: f339d6033a727d946898154ec69fb835, type: 2}
-  m_sharedMaterial: {fileID: 4109255242004652255, guid: f339d6033a727d946898154ec69fb835, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 862c6ef5f0dc9f049b9a78083aa836d3, type: 2}
+  m_sharedMaterial: {fileID: -7871306774678953932, guid: 862c6ef5f0dc9f049b9a78083aa836d3, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -9354,8 +9374,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Play
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 862c6ef5f0dc9f049b9a78083aa836d3, type: 2}
-  m_sharedMaterial: {fileID: 4471891531462397177, guid: 862c6ef5f0dc9f049b9a78083aa836d3, type: 2}
+  m_fontAsset: {fileID: 0}
+  m_sharedMaterial: {fileID: 0}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -10490,8 +10510,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Escape the Backrooms
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: f339d6033a727d946898154ec69fb835, type: 2}
-  m_sharedMaterial: {fileID: 4109255242004652255, guid: f339d6033a727d946898154ec69fb835, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 862c6ef5f0dc9f049b9a78083aa836d3, type: 2}
+  m_sharedMaterial: {fileID: -7871306774678953932, guid: 862c6ef5f0dc9f049b9a78083aa836d3, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -12927,8 +12947,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Play
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: f339d6033a727d946898154ec69fb835, type: 2}
-  m_sharedMaterial: {fileID: 4109255242004652255, guid: f339d6033a727d946898154ec69fb835, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 862c6ef5f0dc9f049b9a78083aa836d3, type: 2}
+  m_sharedMaterial: {fileID: -7871306774678953932, guid: 862c6ef5f0dc9f049b9a78083aa836d3, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

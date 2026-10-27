@@ -24347,14 +24347,34 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 278627193}
     m_Modifications:
+    - target: {fileID: 1285602563273458984, guid: 18d8f50935c5b6144a448d31c61bd71c, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 862c6ef5f0dc9f049b9a78083aa836d3, type: 2}
+    - target: {fileID: 1285602563273458984, guid: 18d8f50935c5b6144a448d31c61bd71c, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -7871306774678953932, guid: 862c6ef5f0dc9f049b9a78083aa836d3, type: 2}
+    - target: {fileID: 1285602563273458984, guid: 18d8f50935c5b6144a448d31c61bd71c, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1693599416634911873, guid: 18d8f50935c5b6144a448d31c61bd71c, type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+      objectReference: {fileID: 11400000, guid: 862c6ef5f0dc9f049b9a78083aa836d3, type: 2}
     - target: {fileID: 1693599416634911873, guid: 18d8f50935c5b6144a448d31c61bd71c, type: 3}
       propertyPath: m_sharedMaterial
       value: 
-      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+      objectReference: {fileID: -7871306774678953932, guid: 862c6ef5f0dc9f049b9a78083aa836d3, type: 2}
+    - target: {fileID: 1693599416634911873, guid: 18d8f50935c5b6144a448d31c61bd71c, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3503278970571723502, guid: 18d8f50935c5b6144a448d31c61bd71c, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4264612439620439245, guid: 18d8f50935c5b6144a448d31c61bd71c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -24454,11 +24474,15 @@ PrefabInstance:
     - target: {fileID: 8189837899316741295, guid: 18d8f50935c5b6144a448d31c61bd71c, type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+      objectReference: {fileID: 11400000, guid: 862c6ef5f0dc9f049b9a78083aa836d3, type: 2}
     - target: {fileID: 8189837899316741295, guid: 18d8f50935c5b6144a448d31c61bd71c, type: 3}
       propertyPath: m_sharedMaterial
       value: 
-      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+      objectReference: {fileID: -7871306774678953932, guid: 862c6ef5f0dc9f049b9a78083aa836d3, type: 2}
+    - target: {fileID: 8189837899316741295, guid: 18d8f50935c5b6144a448d31c61bd71c, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
