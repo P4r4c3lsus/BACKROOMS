@@ -54,7 +54,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6c36843bac48b29469f79baf3c98f9b6, type: 3}
-  m_Name: AndroidXRHandMeshData Standalone
+  m_Name: AndroidXRHandMeshData Android
   m_EditorClassIdentifier: Unity.XR.AndroidOpenXR::UnityEngine.XR.OpenXR.Features.Android.AndroidXRHandMeshData
   m_enabled: 0
   nameUi: 'Android XR: Hand Mesh Data'
@@ -611,6 +611,28 @@ MonoBehaviour:
   required: 0
   customRuntimeLoaderName: 
   m_PlaneProviderType: 1
+--- !u!114 &-8308331195516633540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12d3bf61b014a48a2b7564c61da9d7ad, type: 3}
+  m_Name: AndroidXRPerformanceMetrics Standalone
+  m_EditorClassIdentifier: Unity.XR.AndroidOpenXR::UnityEngine.XR.OpenXR.Features.Android.AndroidXRPerformanceMetrics
+  m_enabled: 0
+  nameUi: Android XR Performance Metrics
+  version: 0.1.0
+  featureIdInternal: com.unity.openxr.feature.androidxr-performance-metrics
+  openxrExtensionStrings: XR_ANDROID_performance_metrics
+  company: Unity Technologies
+  priority: 0
+  targetOpenXRApiVersion: 
+  required: 0
+  customRuntimeLoaderName: 
 --- !u!114 &-8299862116309087347
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1650,11 +1672,11 @@ MonoBehaviour:
   m_Name: ARBoundingBoxFeature Standalone
   m_EditorClassIdentifier: Unity.XR.AndroidOpenXR::UnityEngine.XR.OpenXR.Features.Android.ARBoundingBoxFeature
   m_enabled: 0
-  nameUi: 
-  version: 
-  featureIdInternal: 
-  openxrExtensionStrings: 
-  company: 
+  nameUi: 'Android XR: AR Bounding Box'
+  version: 0.1.0
+  featureIdInternal: com.unity.openxr.feature.arfoundation-androidxr-bounding-box
+  openxrExtensionStrings: XR_ANDROID_trackables XR_ANDROID_trackables_object
+  company: Unity Technologies
   priority: 0
   targetOpenXRApiVersion: 
   required: 0
@@ -1835,11 +1857,12 @@ MonoBehaviour:
   m_Name: ARMeshFeature Standalone
   m_EditorClassIdentifier: Unity.XR.MetaOpenXR::UnityEngine.XR.OpenXR.Features.Meta.ARMeshFeature
   m_enabled: 0
-  nameUi: 
-  version: 
-  featureIdInternal: 
-  openxrExtensionStrings: 
-  company: 
+  nameUi: 'Meta Quest: Meshing'
+  version: 0.1.0
+  featureIdInternal: com.unity.openxr.feature.arfoundation-meta-mesh
+  openxrExtensionStrings: XR_FB_scene XR_FB_spatial_entity XR_META_spatial_entity_discovery
+    XR_META_spatial_entity_mesh
+  company: Unity Technologies
   priority: 0
   targetOpenXRApiVersion: 
   required: 0
@@ -2146,11 +2169,11 @@ MonoBehaviour:
   m_Name: MetaQuestTouchProControllerProfile Android
   m_EditorClassIdentifier: Unity.XR.OpenXR::UnityEngine.XR.OpenXR.Features.Interactions.MetaQuestTouchProControllerProfile
   m_enabled: 0
-  nameUi: 
-  version: 
-  featureIdInternal: 
-  openxrExtensionStrings: 
-  company: 
+  nameUi: Meta Quest Touch Pro Controller Profile
+  version: 0.0.1
+  featureIdInternal: com.unity.openxr.feature.input.metaquestpro
+  openxrExtensionStrings: XR_FB_touch_controller_pro
+  company: Unity
   priority: 0
   targetOpenXRApiVersion: 
   required: 0
@@ -2217,18 +2240,18 @@ MonoBehaviour:
   features:
   - {fileID: -8397822401745846084}
   - {fileID: 5342068270347880099}
-  - {fileID: 945589091144082149}
-  - {fileID: -5222690092948438707}
-  - {fileID: 154726748624499245}
-  - {fileID: 8793207371764990841}
+  - {fileID: -8308331195516633540}
+  - {fileID: -136841695897325970}
+  - {fileID: -908063953964191226}
+  - {fileID: -6543000645707725005}
   - {fileID: 4708902345270527383}
   - {fileID: -1348662724127927896}
   - {fileID: 2126502872346485974}
-  - {fileID: -5304617707704421035}
+  - {fileID: 4030330602723444704}
   - {fileID: 6199547705756443583}
-  - {fileID: -4006418683149160058}
+  - {fileID: -5995130922526463183}
   - {fileID: 395728468278170881}
-  - {fileID: -9069800705218229001}
+  - {fileID: 6849954337388120297}
   - {fileID: 6046024131830658068}
   - {fileID: 1021357981040293970}
   - {fileID: -8612655159613503849}
@@ -2240,22 +2263,22 @@ MonoBehaviour:
   - {fileID: 1678232953388262855}
   - {fileID: -1909937863885099709}
   - {fileID: 6741223345304238447}
-  - {fileID: -5557060834411552527}
+  - {fileID: 2347441420788755046}
   - {fileID: 2742407249801657984}
   - {fileID: -7476732994681388528}
-  - {fileID: -4738281478731998903}
+  - {fileID: -5132447195249475759}
   - {fileID: 7639392897071155627}
   - {fileID: -2305547219692821812}
   - {fileID: 5885100834966661120}
   - {fileID: 1602104689032043325}
   - {fileID: -1845118721261868089}
-  - {fileID: 7335774911849302013}
-  - {fileID: 1578021494768218416}
+  - {fileID: 7386303478968205983}
+  - {fileID: -6417321885638236626}
   - {fileID: -4421721019406682560}
   - {fileID: -8483923108815519028}
   - {fileID: 8206205751665770023}
   - {fileID: 4994208494176873385}
-  - {fileID: 6215445816268885942}
+  - {fileID: 6148546306970712121}
   - {fileID: 1773618934858209722}
   - {fileID: -6945134687174709167}
   - {fileID: -2553313731535317026}
@@ -2402,11 +2425,11 @@ MonoBehaviour:
   m_Name: AROcclusionFeature Android
   m_EditorClassIdentifier: Unity.XR.MetaOpenXR::UnityEngine.XR.OpenXR.Features.Meta.AROcclusionFeature
   m_enabled: 0
-  nameUi: 
-  version: 
-  featureIdInternal: 
-  openxrExtensionStrings: 
-  company: 
+  nameUi: 'Meta Quest: Occlusion'
+  version: 0.1.0
+  featureIdInternal: com.unity.openxr.feature.arfoundation-meta-occlusion
+  openxrExtensionStrings: XR_META_environment_depth
+  company: Unity Technologies
   priority: 0
   targetOpenXRApiVersion: 
   required: 0
@@ -2444,7 +2467,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 90ae1e8c3c7a542bba339faf2e771c5a, type: 3}
-  m_Name: AndroidXRSupportFeature Standalone
+  m_Name: AndroidXRSupportFeature Android
   m_EditorClassIdentifier: Unity.XR.AndroidOpenXR::UnityEngine.XR.OpenXR.Features.Android.AndroidXRSupportFeature
   m_enabled: 0
   nameUi: Android XR Support
@@ -3244,19 +3267,19 @@ MonoBehaviour:
   - {fileID: -675853287804364417}
   - {fileID: 7141496379007439625}
   - {fileID: 4539104303423076210}
-  - {fileID: -7309848307738542686}
-  - {fileID: -8569138239773312899}
-  - {fileID: 652675912102088914}
+  - {fileID: 945589091144082149}
+  - {fileID: -5222690092948438707}
+  - {fileID: 4675729132966737651}
   - {fileID: 1250213455593086071}
   - {fileID: -2703200044846190375}
   - {fileID: -7183590418219319687}
   - {fileID: 3012083253830888031}
-  - {fileID: -4113487696990779384}
+  - {fileID: 3825946131318319002}
   - {fileID: 5703810460177331073}
   - {fileID: 544078933615186741}
   - {fileID: 7979190582710467014}
   - {fileID: 6988254477370960534}
-  - {fileID: 6393911017462716636}
+  - {fileID: -9069800705218229001}
   - {fileID: -2115924175939973702}
   - {fileID: 3623637953654052141}
   - {fileID: -2581044964253860384}
@@ -3264,34 +3287,34 @@ MonoBehaviour:
   - {fileID: -8299862116309087347}
   - {fileID: 7949358633396321412}
   - {fileID: 8150377313702218199}
-  - {fileID: 5626679566849377225}
-  - {fileID: 117267394804980093}
+  - {fileID: -8865372575206676234}
+  - {fileID: 3339582528111624034}
   - {fileID: -8779260882719127921}
   - {fileID: -7670944165617833256}
-  - {fileID: 7126762548461146060}
+  - {fileID: 4238934242488679663}
   - {fileID: -8498028511240388219}
   - {fileID: -697364184421290542}
   - {fileID: 594676336528553325}
-  - {fileID: -4771706227847703623}
+  - {fileID: -5693866268011341364}
   - {fileID: 3059972312538381244}
   - {fileID: 8672988103570880449}
   - {fileID: -888615436084673258}
-  - {fileID: 4774713021609543164}
+  - {fileID: -1481045431704913210}
   - {fileID: -5794459502077792092}
-  - {fileID: 4128659894618934080}
-  - {fileID: -3684342563592621930}
-  - {fileID: 2374745409899687361}
+  - {fileID: -5488468572047858314}
+  - {fileID: -1912278271139877741}
+  - {fileID: -5301236529749995373}
   - {fileID: -7881682806556961921}
   - {fileID: -6516486950423454565}
-  - {fileID: 8939971508506613894}
+  - {fileID: 3405267057187490710}
   - {fileID: 2017851388786367199}
-  - {fileID: 3719848189258694075}
+  - {fileID: -3023455159113022137}
   - {fileID: -1422563996328748731}
   - {fileID: 1208462175106452327}
   - {fileID: -4150767563814307837}
   - {fileID: 2266997927763627579}
   - {fileID: -3632827289806394868}
-  - {fileID: -5716511639611084895}
+  - {fileID: 1836034168202478731}
   customLoaderName: 
   m_renderMode: 1
   m_latencyOptimization: 0
@@ -4072,11 +4095,11 @@ MonoBehaviour:
   m_Name: ARCameraFeature Android
   m_EditorClassIdentifier: Unity.XR.MetaOpenXR::UnityEngine.XR.OpenXR.Features.Meta.ARCameraFeature
   m_enabled: 0
-  nameUi: 
-  version: 
-  featureIdInternal: 
-  openxrExtensionStrings: 
-  company: 
+  nameUi: 'Meta Quest: Camera (Passthrough)'
+  version: 0.1.0
+  featureIdInternal: com.unity.openxr.feature.arfoundation-meta-camera
+  openxrExtensionStrings: XR_FB_passthrough
+  company: Unity Technologies
   priority: 0
   targetOpenXRApiVersion: 
   required: 0
@@ -4709,6 +4732,32 @@ MonoBehaviour:
   m_hasMigratedMultiviewRenderRegionSetting: 1
   m_foveatedRenderingApi: 1
   m_useOpenXRPredictedTime: 1
+--- !u!114 &-136841695897325970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90ae1e8c3c7a542bba339faf2e771c5a, type: 3}
+  m_Name: AndroidXRSupportFeature Standalone
+  m_EditorClassIdentifier: Unity.XR.AndroidOpenXR::UnityEngine.XR.OpenXR.Features.Android.AndroidXRSupportFeature
+  m_enabled: 0
+  nameUi: Android XR Support
+  version: 1.0.0
+  featureIdInternal: com.unity.openxr.feature.androidxr-support
+  openxrExtensionStrings: 
+  company: Unity Technologies
+  priority: 0
+  targetOpenXRApiVersion: 
+  required: 0
+  customRuntimeLoaderName: 
+  optionalFeatures: []
+  symmetricProjection: 0
+  optimizeBufferDiscards: 1
+  multiviewRenderRegionsOptimizationMode: 0
 --- !u!114 &-115986046163925272
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5268,7 +5317,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 12d3bf61b014a48a2b7564c61da9d7ad, type: 3}
-  m_Name: AndroidXRPerformanceMetrics Standalone
+  m_Name: AndroidXRPerformanceMetrics Android
   m_EditorClassIdentifier: Unity.XR.AndroidOpenXR::UnityEngine.XR.OpenXR.Features.Android.AndroidXRPerformanceMetrics
   m_enabled: 0
   nameUi: Android XR Performance Metrics
@@ -7781,11 +7830,11 @@ MonoBehaviour:
   m_Name: MicrosoftHandInteraction Standalone
   m_EditorClassIdentifier: Unity.XR.OpenXR::UnityEngine.XR.OpenXR.Features.Interactions.MicrosoftHandInteraction
   m_enabled: 0
-  nameUi: 
-  version: 
-  featureIdInternal: 
-  openxrExtensionStrings: 
-  company: 
+  nameUi: Microsoft Hand Interaction Profile
+  version: 0.0.1
+  featureIdInternal: com.unity.openxr.feature.input.handtracking
+  openxrExtensionStrings: XR_MSFT_hand_interaction
+  company: Unity
   priority: 0
   targetOpenXRApiVersion: 
   required: 0
@@ -8156,6 +8205,28 @@ MonoBehaviour:
   version: 0.1.0
   featureIdInternal: com.unity.openxr.feature.androidxr-performance-metrics
   openxrExtensionStrings: XR_ANDROID_performance_metrics
+  company: Unity Technologies
+  priority: 0
+  targetOpenXRApiVersion: 
+  required: 0
+  customRuntimeLoaderName: 
+--- !u!114 &6849954337388120297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c36843bac48b29469f79baf3c98f9b6, type: 3}
+  m_Name: AndroidXRHandMeshData Standalone
+  m_EditorClassIdentifier: Unity.XR.AndroidOpenXR::UnityEngine.XR.OpenXR.Features.Android.AndroidXRHandMeshData
+  m_enabled: 0
+  nameUi: 'Android XR: Hand Mesh Data'
+  version: 0.1.0
+  featureIdInternal: com.unity.openxr.feature.androidxr-hand-mesh-data
+  openxrExtensionStrings: XR_ANDROID_hand_mesh
   company: Unity Technologies
   priority: 0
   targetOpenXRApiVersion: 
