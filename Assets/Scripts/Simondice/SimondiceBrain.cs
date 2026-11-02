@@ -32,7 +32,6 @@ public class SimondiceBrain : MonoBehaviour
     private int rondasCompletadas = 0;
     private bool juegoTerminado = false;
 
-    [ContextMenu("EMPEZAR NUEVO JUEGO")]
     public void IniciarJuego()
     {
         if (juegoTerminado) return;
@@ -145,7 +144,7 @@ public class SimondiceBrain : MonoBehaviour
         botonAmarillo.material = verdeEncendido;
         botonAzul.material = verdeEncendido;
 
-        yield return null; // Solo esperamos un frame y dejamos todo encendido
+        yield return null;
     }
 }
 
