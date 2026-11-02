@@ -1739,12 +1739,32 @@ MonoBehaviour:
   - name: CreditsMusic
     clip: {fileID: 8300000, guid: 29b393b96c7a20745b6bf6ce8524fd48, type: 3}
     volume: 0.5
+  - name: DoorOpen
+    clip: {fileID: 8300000, guid: f1c28571fe2a8fd48bce9fbc8ceb3b62, type: 3}
+    volume: 0.7
+  - name: LeverDoor
+    clip: {fileID: 8300000, guid: d21f248c066bc5944bb6bf1ba605ed24, type: 3}
+    volume: 0.7
+  - name: LeverMove
+    clip: {fileID: 8300000, guid: 05d90d31f027c3d40abc2c5e98d67be9, type: 3}
+    volume: 0.6
+  - name: SimonTone
+    clip: {fileID: 8300000, guid: f4a4dc95d9fb72f46ae7fe54974f028c, type: 3}
+    volume: 0.6
   sceneMusic:
   - sceneName: UIMainMenu
     musicName: MainMenuMusic
   - sceneName: UICredits
     musicName: CreditsMusic
-  - sceneName: Gameplay
+  - sceneName: EscapeRoom
+    musicName: GamePlayMusic
+  - sceneName: Level_0
+    musicName: GamePlayMusic
+  - sceneName: Level_1
+    musicName: GamePlayMusic
+  - sceneName: Level_2
+    musicName: GamePlayMusic
+  - sceneName: Level_3
     musicName: GamePlayMusic
   musicSource: {fileID: 195560982}
   sfxSource: {fileID: 195560981}

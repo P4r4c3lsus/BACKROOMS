@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SimondiceBrain : MonoBehaviour
 {
-    [Header("Los 4 Botones Físicos")]
+    [Header("Los 4 Botones FÃ­sicos")]
     public MeshRenderer botonVerde;
     public MeshRenderer botonRojo;
     public MeshRenderer botonAmarillo;
@@ -27,7 +27,7 @@ public class SimondiceBrain : MonoBehaviour
     public int pasoActualJugador = 0;
     public bool turnoDelJugador = false;
 
-    [Header("Configuración Escape Room")]
+    [Header("ConfiguraciÃ³n Escape Room")]
     public int rondasParaGanar = 5;
     private int rondasCompletadas = 0;
     private bool juegoTerminado = false;
@@ -83,12 +83,12 @@ public class SimondiceBrain : MonoBehaviour
 
                 if (rondasCompletadas >= rondasParaGanar)
                 {
-                    Debug.Log("¡GANASTE! Puzzle superado.");
+                    Debug.Log("Â¡GANASTE! Puzzle superado.");
                     StartCoroutine(RutinaVictoria());
                 }
                 else
                 {
-                    Debug.Log("¡Ronda superada! Llevas " + rondasCompletadas + " de " + rondasParaGanar);
+                    Debug.Log("Â¡Ronda superada! Llevas " + rondasCompletadas + " de " + rondasParaGanar);
                     Invoke("IniciarNuevaRonda", 1.5f);
                 }
             }
@@ -96,13 +96,15 @@ public class SimondiceBrain : MonoBehaviour
         else
         {
             turnoDelJugador = false;
-            Debug.Log("¡Error! Fin del juego.");
+            Debug.Log("Â¡Error! Fin del juego.");
             StartCoroutine(RutinaError());
         }
     }
 
     private IEnumerator ParpadeoRutina(int numeroColor)
     {
+        if (AudioManager.Instance != null)
+            AudioManager.Instance.PlaySFX("SimonTone");
         if (numeroColor == 0) botonVerde.material = verdeEncendido;
         else if (numeroColor == 1) botonRojo.material = rojoEncendido;
         else if (numeroColor == 2) botonAmarillo.material = amarilloEncendido;

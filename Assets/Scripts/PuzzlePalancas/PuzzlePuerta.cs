@@ -11,9 +11,17 @@ public class PuzzlePuerta : MonoBehaviour
     private Quaternion rotacionCerrada;
     private Quaternion rotacionAbierta;
 
+    private bool puertaAbierta;
+    private int estado1;
+    private int estado2;
+    private int estado3;
+
     void Start()
     {        
         rotacionCerrada = puerta.transform.rotation;
+        estado1 = EstadoPalanca(bisagra1.angle, 0);
+        estado2 = EstadoPalanca(bisagra2.angle, 0);
+        estado3 = EstadoPalanca(bisagra3.angle, 0);
 
 
         rotacionAbierta = rotacionCerrada * Quaternion.Euler(0f, 90f, 0f);
@@ -25,7 +33,19 @@ public class PuzzlePuerta : MonoBehaviour
         bool p3Abajo = bisagra3.angle > 30f;
         bool p2Arriba = bisagra2.angle < -30f;
 
-        if (p1Abajo && p2Arriba && p3Abajo)
+        SonarPalanca(bisagra1, ref estado1);
+        SonarPalanca(bisagra2, ref estado2);
+        SonarPalanca(bisagra3, ref estado3);
+
+        bool debeAbrir = p1Abajo && p2Arriba && p3Abajo;
+        if (debeAbrir != puertaAbierta)
+        {
+            puertaAbierta = debeAbrir;
+            if (AudioManager.Instance != null)
+                AudioManager.Instance.PlaySFX("LeverDoor");
+        }
+
+        if (debeAbrir)
         {            
             puerta.transform.rotation = Quaternion.RotateTowards(puerta.transform.rotation, rotacionAbierta, velocidadRotacion * Time.deltaTime);
         }
@@ -33,6 +53,22 @@ public class PuzzlePuerta : MonoBehaviour
         {            
             puerta.transform.rotation = Quaternion.RotateTowards(puerta.transform.rotation, rotacionCerrada, velocidadRotacion * Time.deltaTime);
         }
+    }
+    // Mantiene el estado entre extremos para evitar sonidos por vibraciones.
+    private int EstadoPalanca(float angulo, int anterior)
+    {
+        if (angulo > 30f) return 1;
+        if (angulo < -30f) return -1;
+        return anterior;
+    }
+
+    private void SonarPalanca(HingeJoint bisagra, ref int estado)
+    {
+        int nuevoEstado = EstadoPalanca(bisagra.angle, estado);
+        if (nuevoEstado == estado) return;
+        estado = nuevoEstado;
+        if (AudioManager.Instance != null)
+            AudioManager.Instance.PlaySFX("LeverMove");
     }
 }
 

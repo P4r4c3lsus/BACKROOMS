@@ -28,7 +28,7 @@ public class AudioManager : MonoBehaviour
     [Header("Lista de sonidos")]
     [SerializeField] private List<Sound> sounds = new();
 
-    [Header("Música por escena")]
+    [Header("MÃºsica por escena")]
     [SerializeField] private List<SceneMusic> sceneMusic = new();
 
     [Header("Audio Sources")]
@@ -91,7 +91,8 @@ public class AudioManager : MonoBehaviour
 
     private void OnEnable()
     {
-        SceneManager.sceneLoaded += OnSceneLoaded;
+        if (Instance == this)
+            SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
     private void OnDisable()
@@ -99,9 +100,16 @@ public class AudioManager : MonoBehaviour
         SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 
+    private void OnDestroy()
+    {
+        if (Instance == this)
+            Instance = null;
+    }
+
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        PlaySceneMusic(scene.name);
+        if (Instance == this && mode == LoadSceneMode.Single)
+            PlaySceneMusic(scene.name);
     }
 
     private void PlaySceneMusic(string sceneName)
@@ -120,7 +128,7 @@ public class AudioManager : MonoBehaviour
     {
         if (!soundDictionary.TryGetValue(soundName, out Sound sound))
         {
-            Debug.LogWarning("Música no encontrada: " + soundName);
+            Debug.LogWarning("MÃºsica no encontrada: " + soundName);
             return;
         }
 
@@ -163,7 +171,6 @@ public class AudioManager : MonoBehaviour
         musicSource.volume = 0f;
         musicSource.Play();
 
-        float targetVolume = newSound.volume * musicVolume;
 
         if (duration > 0f)
         {
@@ -183,7 +190,7 @@ public class AudioManager : MonoBehaviour
             }
         }
 
-        musicSource.volume = targetVolume;
+        musicSource.volume = newSound.volume * musicVolume;
 
         fadeCoroutine = null;
     }

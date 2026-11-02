@@ -39,6 +39,8 @@ public class DoorController : MonoBehaviour
         }
 
         isOpen = true;
+        if (AudioManager.Instance != null)
+            AudioManager.Instance.PlaySFX("DoorOpen");
         StartCoroutine(OpenDoorRoutine());
     }
 
