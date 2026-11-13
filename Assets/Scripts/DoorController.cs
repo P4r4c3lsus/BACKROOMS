@@ -14,6 +14,8 @@ public class DoorController : MonoBehaviour
     private Quaternion openRotation;
     private bool isOpen;
 
+    public bool IsOpen => isOpen;
+
     private void Start()
     {
         if (doorPivot == null)

@@ -1,2 +1,6 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# TMP atlases contain coupled glyph tables and texture data. Never text-merge them.
+Assets/Fonts/escape_room_1936/*.asset merge=binary
+Assets/ExternalFonts/escape_room_1936/*.asset merge=binary

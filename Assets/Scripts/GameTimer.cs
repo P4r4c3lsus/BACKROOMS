@@ -12,21 +12,39 @@ public class GameTimer : MonoBehaviour
     [Header("Game Over")]
     [SerializeField] private GameObject gameOverPanel;
 
+    [Header("Demo complete")]
+    [SerializeField] private GameObject victoryPanel;
+
     [Header("Componentes que se apagan al perder")]
     [SerializeField] private Behaviour[] componentsToDisable;
 
     private float timeRemaining;
     private bool gameOver;
+    private bool demoCompleted;
+
+    public bool IsRunning => !gameOver && !demoCompleted;
+    public bool DemoCompleted => demoCompleted;
 
     private void Start()
     {
         Time.timeScale = 1f;
         timeRemaining = totalTime;
         gameOver = false;
+        demoCompleted = false;
 
         if (gameOverPanel != null)
         {
             gameOverPanel.SetActive(false);
+        }
+
+        if (victoryPanel != null)
+        {
+            victoryPanel.SetActive(false);
+        }
+
+        if (timerText != null)
+        {
+            timerText.gameObject.SetActive(true);
         }
 
         UpdateTimerText();
@@ -34,7 +52,7 @@ public class GameTimer : MonoBehaviour
 
     private void Update()
     {
-        if (gameOver)
+        if (!IsRunning)
         {
             return;
         }
@@ -73,7 +91,7 @@ public class GameTimer : MonoBehaviour
 
     private void OnDestroy()
     {
-        if (gameOver)
+        if (gameOver || demoCompleted)
         {
             Time.timeScale = 1f;
         }
@@ -81,15 +99,31 @@ public class GameTimer : MonoBehaviour
 
     private void EndGame()
     {
+        if (!IsRunning) return;
         gameOver = true;
-        Time.timeScale = 0f;
 
         if (AudioManager.Instance != null)
         {
             AudioManager.Instance.PlayMusic("GameOverMusic");
         }
 
-        foreach (Behaviour component in componentsToDisable)
+        StopGameplay(gameOverPanel);
+    }
+
+    public void CompleteDemo()
+    {
+        if (!IsRunning) return;
+        demoCompleted = true;
+        if (gameOverPanel != null) gameOverPanel.SetActive(false);
+        StopGameplay(victoryPanel);
+    }
+
+    private void StopGameplay(GameObject resultPanel)
+    {
+        Time.timeScale = 0f;
+        if (timerText != null) timerText.gameObject.SetActive(false);
+
+        foreach (Behaviour component in componentsToDisable ?? System.Array.Empty<Behaviour>())
         {
             if (component != null)
             {
@@ -101,8 +135,8 @@ public class GameTimer : MonoBehaviour
 
         foreach (XRBaseInteractable interactable in interactables)
         {
-           
-            if (gameOverPanel != null && interactable.transform.IsChildOf(gameOverPanel.transform))
+            if (interactable.gameObject.scene != gameObject.scene) continue;
+            if (resultPanel != null && interactable.transform.IsChildOf(resultPanel.transform))
             {
                 continue;
             }
@@ -110,9 +144,9 @@ public class GameTimer : MonoBehaviour
             interactable.enabled = false;
         }
 
-        if (gameOverPanel != null)
+        if (resultPanel != null)
         {
-            gameOverPanel.SetActive(true);
+            resultPanel.SetActive(true);
         }
     }
 }

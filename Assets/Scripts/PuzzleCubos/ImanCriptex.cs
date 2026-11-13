@@ -1,12 +1,15 @@
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
+using UnityEngine.XR.Interaction.Toolkit.Interactables;
 
 public class ImanCriptex : MonoBehaviour
 {
     private HingeJoint bisagra;
     private JointSpring resorte;
     private bool siendoAgarrado = false;
+    private XRGrabInteractable grab;
 
-    void Start()
+    void Awake()
     {
         bisagra = GetComponent<HingeJoint>();
         bisagra.useSpring = true;
@@ -15,6 +18,24 @@ public class ImanCriptex : MonoBehaviour
         resorte.spring = 15f;
         resorte.damper = 5f;
     }
+
+    private void OnEnable()
+    {
+        grab = GetComponent<XRGrabInteractable>();
+        if (grab == null) return;
+        grab.selectEntered.AddListener(Grabbed);
+        grab.selectExited.AddListener(Released);
+    }
+
+    private void OnDisable()
+    {
+        if (grab == null) return;
+        grab.selectEntered.RemoveListener(Grabbed);
+        grab.selectExited.RemoveListener(Released);
+    }
+
+    private void Grabbed(SelectEnterEventArgs args) => AlAgarrar();
+    private void Released(SelectExitEventArgs args) => AlSoltar();
 
     void Update()
     {
