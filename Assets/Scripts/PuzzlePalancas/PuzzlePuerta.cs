@@ -37,7 +37,8 @@ public class PuzzlePuerta : MonoBehaviour
         SonarPalanca(bisagra2, ref estado2);
         SonarPalanca(bisagra3, ref estado3);
 
-        bool debeAbrir = p1Abajo && p2Arriba && p3Abajo;
+        // Once solved, keep the passage open even if a released lever moves slightly.
+        bool debeAbrir = puertaAbierta || (p1Abajo && p2Arriba && p3Abajo);
         if (debeAbrir != puertaAbierta)
         {
             puertaAbierta = debeAbrir;

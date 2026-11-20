@@ -129,3 +129,25 @@ trigger detectó el objeto correcto, Simon completó sus seis rondas configurada
 la puerta abrió y terminó su animación. Se probaron techo y suelo en cuatro zonas,
 el movimiento de una hoja mediante XR y los diez objetos nuevos. La victoria al
 entrar y el reinicio de los tres estados desde Reintentar también pasaron.
+
+## Paso de puerta, columnas y tarjetas rígidas
+
+Las doce columnas `dspilar`/`dspilar2` del segundo nivel tienen MeshCollider sólido.
+El marco `Pillar2Door` usa la geometría de su malla como collider; el BoxCollider
+anterior también llenaba el hueco de la puerta. El CharacterController conserva
+su seguimiento y altura, con radio 0.24, Skin Width 0.025 y Step Offset 0.20 para
+facilitar el paso y evitar engancharse en pequeños desniveles.
+El puzzle de palancas mantiene la puerta abierta después de resolverlo.
+
+Las hojas conservan sus objetos y referencias de pistas, pero sus SpriteRenderers
+y capas superpuestas quedan desactivados. La representación es una tarjeta cerrada
+de 6 mm, con textura fija por ambos lados y material URP/Unlit opaco. El collider
+tiene 12 mm de espesor. El agarre es individual, cinemático, suavizado y sin cambio
+de escala. Al soltar, la tarjeta queda inmóvil para poder volver a consultarla;
+ya no utiliza VRPropPhysics ni activa gravedad.
+
+Pasaron ocho comprobaciones en Play: columnas sólidas, bloqueo con puerta cerrada,
+apertura por las palancas, paso usando el CharacterController real, apertura
+persistente al soltar una palanca, movimiento de la tarjeta mediante XR, escala
+constante y posición estable tras soltarla. No se observaron errores de compilación.
+La estabilidad visual en el visor físico debe confirmarse con el dispositivo.
