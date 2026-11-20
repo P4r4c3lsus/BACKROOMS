@@ -626,6 +626,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3762376674005534456, guid: 4f4a8f083e3e84146b39e4583dcc5092, type: 3}
       insertIndex: -1
       addedObject: {fileID: 43257212}
+    - targetCorrespondingSourceObject: {fileID: 3762376674005534456, guid: 4f4a8f083e3e84146b39e4583dcc5092, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 43257215}
   m_SourcePrefab: {fileID: 100100000, guid: 4f4a8f083e3e84146b39e4583dcc5092, type: 3}
 --- !u!4 &43257207 stripped
 Transform:
@@ -748,7 +751,7 @@ MonoBehaviour:
   m_SmoothScale: 0
   m_SmoothScaleAmount: 8
   m_TightenScale: 0.1
-  m_ThrowOnDetach: 0
+  m_ThrowOnDetach: 1
   m_ThrowSmoothingDuration: 0.25
   m_ThrowSmoothingCurve:
     serializedVersion: 2
@@ -805,6 +808,18 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 3
+--- !u!114 &43257215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 43257209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d20c563808f2f747af303cfcc065aa4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VRPropPhysics
 --- !u!1 &61575628 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4832360338233797039, guid: 1327ffa27eae0f348994469db1a20fd5, type: 3}
@@ -7869,6 +7884,7 @@ GameObject:
   - component: {fileID: 993900115}
   - component: {fileID: 993900114}
   - component: {fileID: 993900113}
+  - component: {fileID: 993900116}
   m_Layer: 0
   m_Name: acertijo estatua
   m_TagString: Untagged
@@ -8054,7 +8070,7 @@ MonoBehaviour:
   m_SmoothScale: 0
   m_SmoothScaleAmount: 8
   m_TightenScale: 0.1
-  m_ThrowOnDetach: 0
+  m_ThrowOnDetach: 1
   m_ThrowSmoothingDuration: 0.25
   m_ThrowSmoothingCurve:
     serializedVersion: 2
@@ -8132,6 +8148,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 17.279999, y: 23.039999, z: 0.48643467}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &993900116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 993900109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d20c563808f2f747af303cfcc065aa4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VRPropPhysics
 --- !u!114 &999784686 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 239778704283471316, guid: d6878e1999eb4b44a9f5a263af86c185, type: 3}
@@ -14455,6 +14483,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7388047140347592332, guid: 218f263d2c56c2a4695928034016c679, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1793763998}
+    - targetCorrespondingSourceObject: {fileID: 7388047140347592332, guid: 218f263d2c56c2a4695928034016c679, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1793764001}
   m_SourcePrefab: {fileID: 100100000, guid: 218f263d2c56c2a4695928034016c679, type: 3}
 --- !u!1 &1793763995 stripped
 GameObject:
@@ -14567,7 +14598,7 @@ MonoBehaviour:
   m_SmoothScale: 0
   m_SmoothScaleAmount: 8
   m_TightenScale: 0.1
-  m_ThrowOnDetach: 0
+  m_ThrowOnDetach: 1
   m_ThrowSmoothingDuration: 0.25
   m_ThrowSmoothingCurve:
     serializedVersion: 2
@@ -14624,6 +14655,18 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 3
+--- !u!114 &1793764001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1793763995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d20c563808f2f747af303cfcc065aa4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VRPropPhysics
 --- !u!136 &1821023195 stripped
 CapsuleCollider:
   m_CorrespondingSourceObject: {fileID: 2219299584655724807, guid: 1327ffa27eae0f348994469db1a20fd5, type: 3}
@@ -16350,6 +16393,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7388047140347592332, guid: 218f263d2c56c2a4695928034016c679, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2026511160}
+    - targetCorrespondingSourceObject: {fileID: 7388047140347592332, guid: 218f263d2c56c2a4695928034016c679, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2026511163}
   m_SourcePrefab: {fileID: 100100000, guid: 218f263d2c56c2a4695928034016c679, type: 3}
 --- !u!1 &2026511157 stripped
 GameObject:
@@ -16462,7 +16508,7 @@ MonoBehaviour:
   m_SmoothScale: 0
   m_SmoothScaleAmount: 8
   m_TightenScale: 0.1
-  m_ThrowOnDetach: 0
+  m_ThrowOnDetach: 1
   m_ThrowSmoothingDuration: 0.25
   m_ThrowSmoothingCurve:
     serializedVersion: 2
@@ -16519,6 +16565,18 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 3
+--- !u!114 &2026511163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2026511157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d20c563808f2f747af303cfcc065aa4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VRPropPhysics
 --- !u!1 &2059239449 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 77222751598968691, guid: 5d03f47f468980248bc162d081b85f9b, type: 3}

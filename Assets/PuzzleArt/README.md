@@ -151,3 +151,8 @@ apertura por las palancas, paso usando el CharacterController real, apertura
 persistente al soltar una palanca, movimiento de la tarjeta mediante XR, escala
 constante y posición estable tras soltarla. No se observaron errores de compilación.
 La estabilidad visual en el visor físico debe confirmarse con el dispositivo.
+
+Actualización de física de las tarjetas: conservan la malla y textura fija, pero
+vuelven a utilizar VRPropPhysics. Al soltarlas se activan Rigidbody dinámico y
+gravedad; también permiten lanzarlas. Permanecen en su posición inicial hasta
+el primer agarre para conservar la disposición de las pistas.
