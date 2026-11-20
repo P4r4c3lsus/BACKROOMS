@@ -15,6 +15,8 @@ public class ManagerCriptex : MonoBehaviour
     public float margenError = 15f;
     private bool puzzleResuelto = false;
 
+    public bool IsSolved => puzzleResuelto;
+
     void Update()
     {
         if (puzzleResuelto) return;
@@ -34,6 +36,7 @@ public class ManagerCriptex : MonoBehaviour
 
     bool EvaluarCubo(HingeJoint cubo, float anguloObjetivo)
     {
+        if (cubo == null) return false;
         float diferencia = Mathf.Abs(Mathf.DeltaAngle(cubo.angle, anguloObjetivo));
         return diferencia <= margenError;
     }

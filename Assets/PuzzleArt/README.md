@@ -95,3 +95,37 @@ exclusión entre victoria y derrota y reinicio desde ambos botones de resultado.
 Se revisaron capturas de HUD, Game Over y victoria. El shader de HUD compiló sin
 errores. Persiste en este editor el error de carga nativa UnityOpenXR mencionado
 arriba; las pruebas no equivalen a una validación con visor y mandos físicos.
+
+## Salas ampliadas y puerta con tres requisitos
+
+Level_1 agrupa el escenario en `Demo Rooms`, con escala uniforme 1.20 alrededor
+del punto inicial. Esto amplía el ancho y fondo un 20 % y conserva las conexiones
+entre habitaciones, los anclajes de bisagras y la forma esférica de los pomos.
+El rig y el HUD quedan fuera de este grupo. El temporizador subió de Y=180 a
+Y=280 en su RectTransform; los paneles de resultado permanecen centrados.
+
+Se añadieron 18 colliders sólidos a las piezas del techo y diez objetos agarrables
+(seis cajas y cuatro piedras). No se aumentó la cantidad de barriles, patitos ni
+calaveras que se cuentan en una pista. Las cuatro hojas conservan sus referencias,
+pero tienen un tamaño manejable, collider fino, Rigidbody, agarre XR, respaldo
+y copia legible por el reverso. Se pueden recoger y volver a consultar.
+
+`FinalDoorRequirements`, en la puerta de gigi2, requiere exclusivamente:
+
+- `SimondiceBrain.IsSolved` después de completar sus rondas configuradas.
+- `ManagerCriptex.IsSolved` después de alinear las cuatro bisagras con sus ángulos.
+- `PedestalController.IsSolved` después de colocar el objeto correcto.
+
+`DoorController.OpenDoor` consulta estos requisitos incluso si lo llama el pedestal.
+El controlador vuelve a comprobarlos cada frame, por lo que el orden de resolución
+es libre. Colocar el objeto primero no abre la puerta ni obliga a colocarlo de nuevo.
+Los estados de resolución se reinician al recargar la escena. Las otras puertas
+conservan su comportamiento porque el requisito es opcional y solo está conectado
+en la puerta final de Level_1.
+
+Validación: pasaron 19 comprobaciones en Play. Se rechazaron las siete combinaciones
+incompletas, se resolvieron físicamente las bisagras (0, -90, 0, 180 grados), el
+trigger detectó el objeto correcto, Simon completó sus seis rondas configuradas y
+la puerta abrió y terminó su animación. Se probaron techo y suelo en cuatro zonas,
+el movimiento de una hoja mediante XR y los diez objetos nuevos. La victoria al
+entrar y el reinicio de los tres estados desde Reintentar también pasaron.

@@ -32,6 +32,8 @@ public class SimondiceBrain : MonoBehaviour
     private int rondasCompletadas = 0;
     private bool juegoTerminado = false;
 
+    public bool IsSolved => juegoTerminado;
+
     public void IniciarJuego()
     {
         if (juegoTerminado) return;

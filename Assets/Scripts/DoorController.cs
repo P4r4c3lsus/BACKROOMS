@@ -10,6 +10,9 @@ public class DoorController : MonoBehaviour
     [SerializeField] private float openAngle = 90f;
     [SerializeField] private float openDuration = 1f;
 
+    [Header("Optional final-room requirements")]
+    [SerializeField] private FinalDoorRequirements finalRequirements;
+
     private Quaternion closedRotation;
     private Quaternion openRotation;
     private bool isOpen;
@@ -30,6 +33,11 @@ public class DoorController : MonoBehaviour
 
     public void OpenDoor()
     {
+        if (finalRequirements != null && !finalRequirements.AllSolved)
+        {
+            return;
+        }
+
         if (isOpen)
         {
             return;
