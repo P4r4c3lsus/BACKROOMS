@@ -156,3 +156,27 @@ Actualización de física de las tarjetas: conservan la malla y textura fija, pe
 vuelven a utilizar VRPropPhysics. Al soltarlas se activan Rigidbody dinámico y
 gravedad; también permiten lanzarlas. Permanecen en su posición inicial hasta
 el primer agarre para conservar la disposición de las pistas.
+
+## Pivotes corregidos y límites de cabeza VR
+
+Se corrigieron los pivotes de la primera puerta y de la puerta del teclado en
+Level_1, además de DoorSystem.prefab y SistemaPuzle.prefab. Cada pivote queda
+sobre un borde lateral de su hoja, conservando la posición de la puerta cerrada.
+El pivote de gigi2 ya estaba correcto y se conservó. Las siete bisagras de palancas
+y cubos mantienen coincidentes sus anclajes.
+
+El rig utiliza VRHeadCollisionGuard para comprobar una esfera de 12 cm alrededor
+del visor, tanto en LateUpdate como después del seguimiento antes de renderizar.
+Los barridos continuos frenan la posición virtual frente a paredes, puertas, techo
+y suelo; permiten deslizarse junto a una pared. La corrección se aplica al origen
+XR y conserva la rotación del visor. El collider corporal sigue la cabeza en XZ.
+Las manos, las pistas y los controles interactivos se excluyen de estas consultas
+para que sujetar un objeto no empuje al jugador. La cámara conserva su plano
+cercano de 1 cm. Esto limita el movimiento virtual; no frena el movimiento físico
+de la persona y debe probarse con el visor para comprobar la comodidad.
+
+Validación en Play: diez comprobaciones de movimiento de cabeza simulado, paredes
+inclinadas, desplazamiento lateral, retroceso, salto de seguimiento grande, giro
+del visor, seguimiento corporal, techo, suelo y paso por puerta cerrada/abierta.
+La comprobación geométrica de los tres pivotes deja desplazamientos menores que
+0.01 mm respecto a sus bordes y al plano de la hoja.

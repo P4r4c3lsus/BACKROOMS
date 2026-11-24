@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 57358860867717991}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.5499997, y: 1.1491001, z: 0.004400015}
+  m_LocalPosition: {x: 0.61896753, y: 1.1491001, z: 0}
   m_LocalScale: {x: 1.237935, y: 2.4160857, z: 0.5328}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -161,6 +161,7 @@ MonoBehaviour:
   doorPivot: {fileID: 7826018224068643884}
   openAngle: 90
   openDuration: 1
+  finalRequirements: {fileID: 0}
 --- !u!1 &3668348674280592387
 GameObject:
   m_ObjectHideFlags: 0
@@ -276,7 +277,7 @@ Transform:
   m_GameObject: {fileID: 4561179518109185262}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.187, y: 0.04, z: 2.972}
+  m_LocalPosition: {x: -4.2559676, y: 0.04, z: 2.9764}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
